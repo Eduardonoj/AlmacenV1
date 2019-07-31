@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="488.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.eduardolopez.almacen.core.controller.ClienteController">
+   <children>
+      <Label layoutX="88.0" layoutY="78.0" prefHeight="17.0" prefWidth="61.0" text="NIT" />
+      <Label layoutX="88.0" layoutY="117.0" prefHeight="17.0" prefWidth="68.0" text="DPI" />
+      <Label layoutX="87.0" layoutY="156.0" prefHeight="17.0" prefWidth="91.0" text="NOMBRE" />
+      <Label layoutX="86.0" layoutY="195.0" prefHeight="17.0" prefWidth="61.0" text="DIRECCION" />
+      <TextField fx:id="txtNit" layoutX="172.0" layoutY="73.0" prefHeight="25.0" prefWidth="308.0" />
+      <TextField fx:id="txtDpi" layoutX="172.0" layoutY="112.0" prefHeight="25.0" prefWidth="308.0" />
+      <TextField fx:id="txtNombre" layoutX="172.0" layoutY="150.0" prefHeight="25.0" prefWidth="308.0" />
+      <TextField fx:id="txtDireccion" layoutX="172.0" layoutY="191.0" prefHeight="25.0" prefWidth="308.0" />
+      <Label layoutX="122.0" layoutY="24.0" prefHeight="17.0" prefWidth="187.0" text="GESTION DE CLIENTES" />
+      <TableView fx:id="tblCliente" layoutX="5.0" layoutY="246.0" prefHeight="179.0" prefWidth="589.0">
+        <columns>
+          <TableColumn fx:id="colNit" prefWidth="82.0" text="NIT" />
+          <TableColumn fx:id="colDpi" prefWidth="99.0" text="DPI" />
+            <TableColumn fx:id="colNombre" prefWidth="212.0" text="NOMBRE" />
+            <TableColumn fx:id="colDireccion" prefWidth="195.0" text="DIRECCION" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnNuevo" layoutX="14.0" layoutY="440.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="79.0" text="Nuevo" />
+      <Button fx:id="btnGuardar" layoutX="108.0" layoutY="440.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="79.0" text="Guardar" />
+      <Button fx:id="btnEliminar" layoutX="199.0" layoutY="440.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="79.0" text="Eliminar" />
+      <Button fx:id="btnModificar" layoutX="290.0" layoutY="440.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="79.0" text="Modificar" />
+      <Button fx:id="btnReporte" layoutX="380.0" layoutY="440.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="79.0" text="Reporte" />
+      <Button fx:id="btnRegresar" layoutX="518.0" layoutY="440.0" mnemonicParsing="false" onAction="#regresarVentanaPrincipal" prefHeight="25.0" prefWidth="68.0" text="Regresar" />
+   </children>
+</AnchorPane>

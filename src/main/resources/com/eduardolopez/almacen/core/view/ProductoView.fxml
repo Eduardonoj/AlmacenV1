@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="484.0" prefWidth="764.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.eduardolopez.almacen.core.controller.ProductoController">
+   <children>
+      <Label layoutX="205.0" layoutY="22.0" text="GESTION DE PRODUCTOS" />
+      <Label layoutX="58.0" layoutY="59.0" text="CODIGO PRODUCTO" />
+      <Label layoutX="58.0" layoutY="94.0" prefHeight="17.0" prefWidth="87.0" text="CATEGORIA" />
+      <Label layoutX="58.0" layoutY="163.0" text="DESCRIPCION" />
+      <ComboBox layoutX="173.0" layoutY="91.0" prefHeight="25.0" prefWidth="138.0" />
+      <Label layoutX="58.0" layoutY="130.0" prefHeight="17.0" prefWidth="87.0" text="EMPAQUE" />
+      <ComboBox layoutX="173.0" layoutY="126.0" prefHeight="25.0" prefWidth="138.0" />
+      <TextField layoutX="145.0" layoutY="159.0" prefHeight="25.0" prefWidth="250.0" />
+      <TextField layoutX="173.0" layoutY="55.0" prefHeight="25.0" prefWidth="138.0" />
+      <Label layoutX="415.0" layoutY="53.0" prefHeight="17.0" prefWidth="112.0" text="PRECIO UNIDAD" />
+      <TextField layoutX="518.0" layoutY="49.0" prefHeight="25.0" prefWidth="148.0" />
+      <Label layoutX="415.0" layoutY="83.0" prefHeight="17.0" prefWidth="112.0" text="PRECIO DOCENA" />
+      <TextField layoutX="518.0" layoutY="79.0" prefHeight="25.0" prefWidth="148.0" />
+      <Label layoutX="415.0" layoutY="112.0" prefHeight="17.0" prefWidth="112.0" text="PRECIO X MAYOR" />
+      <TextField layoutX="518.0" layoutY="108.0" prefHeight="25.0" prefWidth="148.0" />
+      <Label layoutX="414.0" layoutY="173.0" text="IMAGEN" />
+      <TextField layoutX="518.0" layoutY="168.0" prefHeight="25.0" prefWidth="148.0" />
+      <TableView layoutX="5.0" layoutY="200.0" prefHeight="223.0" prefWidth="751.0">
+        <columns>
+          <TableColumn prefWidth="69.0" text="COD_PROD" />
+          <TableColumn prefWidth="75.0" text="CATEGORIA" />
+            <TableColumn prefWidth="68.0" text="EMPAQUE" />
+            <TableColumn prefWidth="168.0" text="DESCRIPCION" />
+            <TableColumn prefWidth="67.0" text="P_UNI" />
+            <TableColumn prefWidth="67.0" text="P_DOCENA" />
+            <TableColumn prefWidth="69.0" text="P_MAYOR" />
+            <TableColumn prefWidth="79.0" text="EXISTENCIA" />
+            <TableColumn fx:id="tblProducto" prefWidth="88.0" text="IMAGEN" />
+        </columns>
+      </TableView>
+      <Label layoutX="414.0" layoutY="143.0" prefHeight="17.0" prefWidth="87.0" text="EXISTENCIA" />
+      <TextField layoutX="518.0" layoutY="138.0" prefHeight="25.0" prefWidth="148.0" />
+      <Button layoutX="14.0" layoutY="434.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="96.0" text="Nuevo" />
+      <Button layoutX="654.0" layoutY="432.0" mnemonicParsing="false" onAction="#regresarVentanaPrincipal" prefHeight="25.0" prefWidth="75.0" text="Regresar" />
+      <Button layoutX="336.0" layoutY="434.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="96.0" text="Modificar" />
+      <Button layoutX="441.0" layoutY="434.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="96.0" text="Reporte" />
+      <Button layoutX="122.0" layoutY="434.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="96.0" text="Guardar" />
+      <Button layoutX="229.0" layoutY="434.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="96.0" text="Eliminar" />
+   </children>
+</AnchorPane>
